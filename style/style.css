@@ -3,7 +3,12 @@ body {
     margin: 0 auto;
     font-family: 'Roboto Slab', serif;
      -webkit-font-smoothing: antialiased;
+     background: #8A2387;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
+
 .container-img-perfil {
     width: 100%;
     display: flex;
@@ -14,17 +19,22 @@ body {
 .container-img-perfil img {
     width: 80px;
     margin-top: 10px;
+    box-shadow: -3px 5px 11px -4px rgba(64,61,61,0.75);
+-webkit-box-shadow: -3px 5px 11px -4px rgba(64,61,61,0.75);
+-moz-box-shadow: -3px 5px 11px -4px rgba(64,61,61,0.75);
+
 }
 .container-img-perfil h1 {
-    color: #400D51;
+    color: #fff;
     font-size: 20px;
     margin-top: 20px;
 }
 .container-img-perfil h2 {
-    color:#FF7777 ;
+    color:#fff ;
     font-size: 16px;
     font-weight: 400;
     margin-top: 0;
+    margin-bottom: 20px;
 }
 .section-links {
     width: 100%;
